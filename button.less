@@ -1,0 +1,180 @@
+
+
+.btn {
+	.border-radius(3px, 3px, 3px, 3px);
+	.bordered(1px solid #1b1b1b, 1px solid #1b1b1b, 1px solid #1b1b1b, 1px solid #1b1b1b);
+	.box-shadow(inset 0 1px 0px 0px #666361 ~","inset 0 -2px 0 0 #383534 ~","0px 1px 0px #444444);
+	.box-sizing(border-box);
+	.gradient(#595654, #595654, #4a4745);
+	.text-shadow(0 1px #000000);
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	float: left;	
+	font-size: 10px;
+	height: 20px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 10px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	&.center {
+		float: none;
+		margin: 0 auto;
+	}
+	&.right {
+		float: right;
+	}
+	&.left {
+		float: left;
+	}
+	&.na {
+		cursor: not-allowed;
+		opacity: .5;
+	}
+	&.yellow {
+		.box-shadow(inset 0 1px 0px 0px #ffe779 ~","inset 0 -2px 0 0 #947800 ~","0px 1px 0px #444444);
+		.gradient(#fedf65, #ffcc00, #d1a802);
+		color: #000;
+		.text-shadow(0 1px #f2de88);
+		&:hover, &.act, &.input:focus, &.hover, &.checked {
+			color: #ffcc00;
+			.text-shadow(0 1px #000);
+		}
+	}
+	&.red {
+		.box-shadow(inset 0 1px 0px 0px #b41212 ~","inset 0 -2px 0 0 #610a0a ~","0px 1px 0px #444444);
+		.gradient(#9b1010, #9b1010, #850d0d);
+		&:hover, &.act, &.input:focus, &.hover, &.checked {
+			color: #b41212;
+			.text-shadow(0 1px #000);
+		}
+	}
+	&.green {
+		.box-shadow(inset 0 1px 0px 0px #2aa323 ~","inset 0 -2px 0 0 #175713 ~","0px 1px 0px #444444);
+		.gradient(#248c1e, #248c1e, #1f781a);
+		&:hover, &.act, &.input:focus, &.hover, &.checked {
+			color: #248c1e;
+			.text-shadow(0 1px #000);
+		}
+	}
+	&:hover, &.act, &.input:focus, &.hover, &.checked {
+		.box-shadow(inset 0 1px 3px 0 rgba(0,0,0,0.3) ~","0px 1px 0px rgba(255,255,255,0.075));
+		.gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4), rgba(0,0,0,0.2));
+		color: #ffcc00;
+		line-height: 19px;
+		&.na {
+			.box-shadow(inset 0 1px 0px 0px #666361 ~","inset 0 -2px 0 0 #383534 ~","0px 1px 0px #3b3a39);
+			.gradient(#595654, #595654, #4a4745);
+			line-height: 22px;
+		}	
+	}
+	&.first-child {
+		.border-radius(3px, 0, 0, 3px);
+		.bordered(1px solid #1b1b1b, none, 1px solid #1b1b1b, 1px solid #1b1b1b);
+	}
+	&.middle-child {
+		.border-radius(0, 0, 0, 0);
+		.bordered(1px solid #1b1b1b, none, 1px solid #1b1b1b, 1px solid #1b1b1b);
+	}
+	&.last-child {
+		.border-radius(0, 3px, 3px, 0);
+		.bordered(1px solid #1b1b1b, 1px solid #1b1b1b, 1px solid #1b1b1b, 1px solid #1b1b1b);
+	}
+	&.no-radius {
+		.border-radius(0, 0, 0, 0);
+	}
+	&.delete {
+		background-color: #ff0000;
+	} 
+	&.ico {
+		min-width: 30px;
+		padding: 0;
+		position: relative;
+		text-indent: -9999px;
+		&:before {
+			content:"A";
+			height: 20px;
+			left: 0;
+			color: #222;
+			font-size: 18px;
+			position: absolute;
+			text-align: center;
+			font-family: icons;
+			line-height: 12px;
+			text-indent: 0;
+			text-shadow: 0 1px 0 #666361;
+			top: 0;
+			width: 30px;
+		}
+		&:hover, &.act {
+			&:before {
+				color: #ffcc00;
+				line-height: 14px;
+				text-shadow: 0 1px 0 #000;
+			}
+		}
+		&.nobg {
+			.border-radius(0px, 0px, 0px, 0px);
+			.bordered(0px solid #1b1b1b, 0px solid #1b1b1b, 0px solid #1b1b1b, 0px solid #1b1b1b);
+			.box-shadow(none);
+			.box-sizing(border-box);
+			background: transparent;
+			.text-shadow(0 1px #000000);
+			&:before {
+				color: #050505;
+				text-shadow: 0 1px 0 #444;
+				font-size: 22px;
+			}
+			&:hover, &.act {
+				&:before {
+					color: #ffcc00;
+					line-height: 14px;
+					text-shadow: 0 1px 0 #000;
+				}
+			}
+		}
+		&.txt {
+			padding: 0 10px 0 26px;
+			text-align: left;
+			text-indent: 0;
+			&:before {
+				width: 26px;
+			}      	
+		} 
+		&.i-add {        
+			&:before {
+				content:"A";
+				font-size: 15px;
+			}
+			&:hover:before, &.act:before, &.hover:before {
+				content:"A";
+			}        
+		}
+		&.i-options {        
+			&:before {
+				content:"B";
+			}
+			&:hover:before, &.act:before, &.hover:before {
+				content:"B";
+			}        
+		}
+		&.i-chat {        
+			&:before {
+				content:"C";
+			}
+			&:hover:before, &.act:before, &.hover:before {
+				content:"C";
+			}        
+		}
+		&.i-user {        
+			&:before {
+				content:"E";
+			}
+			&:hover:before, &.act:before, &.hover:before {
+				content:"E";
+			}        
+		}
+	}
+}

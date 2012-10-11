@@ -1,0 +1,104 @@
+.knob {
+	display: block;
+	.circle {
+		width: 80px;
+		height: 80px;
+		border-radius: 40px;
+		background: #222;
+		.box-shadow(inset 0 1px 0px 0px #111 ~","0px 1px 0px #444444);
+		.gradient(#242424, #1c1c1c, #292929);
+		border: 1px #000 solid;
+		position: relative;
+		.number {
+			text-decoration: none;
+			color: #000;
+			font-size: 10px;
+			text-shadow: 0 1px 0 rgba(255,255,255,0.08);
+			&.act {
+				color: #ffcc00;
+				text-shadow: 0 0 2px rgba(255,255,255,0.66);
+			}
+			&:hover {
+				color: #ccc;
+			}
+		}
+		.top {
+			position: absolute;
+			top: 6px;
+			left: 32px;
+		}
+		.left {
+			position: absolute;
+			left: 12px;
+			top: 20px;
+		}
+		.right {
+			position: absolute;
+			right: 11px;
+			top: 20px;
+		}
+		.bottom {
+			position: absolute;
+			bottom: 5px;
+			left: 37px;
+		}
+		.bottomleft {
+			position: absolute;
+			left: 10px;
+			bottom: 20px;
+		}
+		.bottomright {
+			position: absolute;
+			right: 10px;
+			bottom: 20px;
+		}
+		.innercircle {
+			width: 40px;
+			height: 40px;
+			border-radius: 20px;
+			top: 19px;
+			left: 19px;
+			.box-shadow(inset 0 1px 0px 0px #444 ~","0px 1px 0px #222);
+			.gradient(#444, #444, #333);
+			border: 1px #000 solid;
+			position: absolute;
+			text-indent: -9999px;
+			.innerinnercircle {
+				width: 34px;
+				height: 34px;
+				border-radius: 17px;
+				top: 3px;
+				left: 3px;
+				.gradient(#444, #333, #444);
+				position: absolute;
+				text-indent: -9999px;
+				.circleknob {
+					width: 26px;
+					height: 26px;
+					border-radius: 14px;
+					top: 3px;
+					left: 3px;
+					.box-shadow(inset 0 1px 0px 0px #777 ~","0px 2px 0px #333);
+					.gradient(#595654, #595654, #454241);
+					border: 1px #000 solid;
+					position: absolute;
+					text-indent: -9999px;
+					.light {
+						width: 4px;
+						height: 4px;
+						border-radius: 2px;
+						top: 5px;
+						left: 3px;
+						.box-shadow(inset 0 1px 0px 0px rgba(255,255,255,0.5) ~"," inset 0px -1px 0px rgba(0,0,0,0.2));
+						.gradient(#fedf65, #ffcc00, #d1a802);
+						border: 1px #000 solid;
+						position: absolute;
+						text-indent: -9999px;
+					}
+				}
+				
+			}
+		}
+	}
+	
+}

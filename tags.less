@@ -1,0 +1,49 @@
+.tag {
+	display: block;
+	width: auto;
+	padding: 0 7px 0 10px;
+	height: 14px;
+	line-height: 13px;
+	font-size: 10px;
+	.bordered(1px solid #1b1b1b, 1px solid #1b1b1b, 1px solid #1b1b1b, 1px solid #1b1b1b);
+	.border-radius(0px, 3px, 3px, 0px);
+	position: relative;
+	&:before {
+		width: 0; 
+		content: "";
+		height: 0; 
+		border-left: 7px solid transparent;
+		border-top: 7px solid transparent;
+		border-bottom: 7px solid transparent;
+		position: absolute;
+		top: 0;
+		left: -14px;
+		display: block;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		left: -1px;
+		top: 5px;
+		height: 4px;
+		width: 4px;
+		background: #111;
+		border-radius: 2px;
+	}
+	&.yellow {
+		.gradient(#fedf65, #ffcc00, #ffcc00);
+		color: #000;
+		.text-shadow(0 1px #f2de88);
+		&:before {
+			border-right: 7px solid #ffcc00;
+		}
+	}
+	&.red {
+		.gradient(#9b1010, #9b1010, #9b1010);
+		color: #000;
+		.text-shadow(0 1px #d14e4e);
+		&:before {
+			border-right: 7px solid #9b1010;
+		}
+	}
+}
