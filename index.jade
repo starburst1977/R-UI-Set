@@ -1,0 +1,68 @@
+html
+  head
+    meta(charset='utf-8')
+    title RUI Set
+    link(href='ui.css', rel='stylesheet', type='text/css')
+  body
+    .main.clearfix
+      .row.clearfix
+        .f-left.item
+          a.slider(href='#')
+            span Slider
+        .f-left.item
+          a.slider.active(href='#')
+            span Slider
+        .f-left.item(style='width: 100px; margin-left: 78px;')
+          a.slider.thin(href='#')
+            span(style='left: 33px;') Slider
+        .f-left.item(style='margin-top: -3px;')
+          a.btn.first-child.ico.i-options.nobg(href='#') Button
+          a.btn.middle-child.ico.i-chat.nobg(href='#') Button
+          a.btn.last-child.ico.i-user.nobg(href='#') Button
+      .f-left.item
+        a.btn(href='#') Button
+      .f-left.item
+        a.btn.first-child(href='#', data-tooltip='Hallo Welt') Text
+        a.btn.middle-child(href='#') Text
+        a.btn.last-child(href='#') Text
+      .f-left.item
+        a.btn.first-child.red(href='#') Text
+        a.btn.middle-child.green(href='#') Text
+        a.btn.last-child.yellow(href='#') Text
+      .f-left.item
+        a.btn.ico.txt.i-add(href='#') Button
+      .f-left.item
+        a.btn.first-child.ico.i-options(href='#') Button
+        a.btn.middle-child.ico.i-chat(href='#') Button
+        a.btn.last-child.ico.i-user(href='#') Button
+      .f-left.item(style='position: relative;')
+        input.input.btn.act(value='Dropdown Button', type='text')
+        ul.dropdown
+          li Hallo Welt
+          li Hallo Saturn
+          li Hallo Jupiter
+      .row.clearfix
+        .f-left.item
+          label.search-field(for='input')
+            input.input-field(name='', type='text', value='Input field')
+      .row.clearfix(style='margin: 5px 0 0 7px;')
+        .f-left.item
+          .knob
+            .circle
+              a.number.top(href='#') Off
+              a.number.left.act(href='#') 5
+              a.number.right(href='#') 1
+              a.number.bottom(href='#') 3
+              a.number.bottomleft(href='#') 4
+              a.number.bottomright(href='#') 2
+              .innercircle
+                .innerinnercircle
+                  .circleknob
+                    .light
+                      | Hello
+        .f-left.item
+          .f-left.item
+            label.counter(for='input')
+              input.counter-field(name='', type='text', value='12')
+              a.btn.top.ico.i-control-top(href='#') Button
+              a.btn.botom.ico.i-control-bottom(href='#') Button
