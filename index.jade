@@ -8,45 +8,67 @@ html
   body
     .main.clearfix
       .row.clearfix
+
+        // ------------------------------ Checkbox like sliders
         .f-left.item
           a.slider(href='#')
             span Slider
         .f-left.item
           a.slider.active(href='#')
             span Slider
+
+        // ------------------------------ Range slider
         .f-left.item(style='width: 100px; margin-left: 78px;')
           a.slider.thin(href='#')
             span(style='left: 33px;') Slider
+
+        // ------------------------------ Clickable Icons
         .f-left.item(style='margin-top: -3px;')
           a.btn.first-child.ico.i-options.nobg(href='#') Button
           a.btn.middle-child.ico.i-chat.nobg(href='#') Button
           a.btn.last-child.ico.i-user.nobg(href='#') Button
+
+      // ------------------------------ Single Button
       .f-left.item
         a.btn(href='#') Button
+
+      // ------------------------------ Button Group
       .f-left.item
         a.btn.first-child(href='#', data-tooltip='Hallo Welt') Text
         a.btn.middle-child(href='#') Text
         a.btn.last-child(href='#') Text
+
+      // ------------------------------ Colored Button Group
       .f-left.item
         a.btn.first-child.red(href='#') Text
         a.btn.middle-child.green(href='#') Text
         a.btn.last-child.yellow(href='#') Text
+
+      // ------------------------------ Button including + icon
       .f-left.item
         a.btn.ico.txt.i-add(href='#') Button
+
+      // ------------------------------ Icon Button Group
       .f-left.item
         a.btn.first-child.ico.i-options(href='#') Button
         a.btn.middle-child.ico.i-chat(href='#') Button
         a.btn.last-child.ico.i-user(href='#') Button
+
+      // ------------------------------ Dropdown button including list
       .f-left.item(style='position: relative;')
         button.btn.act Dropdown Button
         ul.dropdown
           li Hallo Welt
           li Hallo Saturn
           li Hallo Jupiter
+
+      // ------------------------------ Searchbox
       .row.clearfix
         .f-left.item
           label.search-field(for='input')
             input.input-field(name='', type='text', value='Input field')
+
+      // ------------------------------ Knob
       .row.clearfix(style='margin: 5px 0 0 7px;')
         .f-left.item
           .knob
@@ -62,6 +84,8 @@ html
                   .circleknob
                     .light
                       | Hello
+
+        // ------------------------------ Counter
         .f-left.item
           .f-left.item
             label.counter(for='input')
