@@ -1,37 +1,39 @@
-a[data-tooltip]:link, a[data-tooltip]:visited {  
-	position: relative;  
-}  
+@charset "UTF-8";
 
-a[data-tooltip]:before {  
-	content: "D";  
-	position: absolute;  
+a[data-tooltip]:link, a[data-tooltip]:visited {
+	position: relative;
+}
+
+a[data-tooltip]:before {
+	content: "D";
+	position: absolute;
 	color: #161616;
 	font-size: 20px;
-	visibility: hidden;  
-	top: -20px;  
-	left: 10px;  
+	visibility: hidden;
+	top: -20px;
+	left: 10px;
 	font-family: icons;
 	z-index: 9999;
-}  
+}
 
-a[data-tooltip]:after {  
-	content: attr(data-tooltip);  
-	position: absolute;  
-	color: white;  
-	top: -32px;  
-	left: 0px;  
-	background: #161616;  
-	padding: 0 10px;  
-	-webkit-border-radius: 10px;  
-	-moz-border-radius: 10px;  
-	border-radius: 3px;  
-	white-space: nowrap;  
-	visibility: hidden;  
+a[data-tooltip]:after {
+	content: attr(data-tooltip);
+	position: absolute;
+	color: white;
+	top: -32px;
+	left: 0px;
+	background: #161616;
+	padding: 0 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 3px;
+	white-space: nowrap;
+	visibility: hidden;
 	line-height: 20px;
 	border: 1px #000 solid;
-}  
+}
 
-a[data-tooltip]:hover:before, a[data-tooltip]:hover:after {  
-	visibility: visible;  
-	-moz-transition: visibility 0s linear .3s;  
-} 
+a[data-tooltip]:hover:before, a[data-tooltip]:hover:after {
+	visibility: visible;
+	-moz-transition: visibility 0s linear .3s;
+}
